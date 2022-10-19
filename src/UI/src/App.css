@@ -1,0 +1,74 @@
+.App {
+  text-align: center;
+  background-color: #3c5484;
+  height: 100vh;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.copyRight{
+  color: white;
+  font-weight: bold;
+}
+
+.mainHeading{
+  font-size: 100px;
+  color: white;
+}
+
+#diceCard{
+  margin: 5px;
+  border-radius: 25px;
+  background-color: #61dafb;
+}
+
+#cardImg{
+  align-self: center;
+  width: 150px;
+  height: 150px;
+}
+
+#cardText{
+  font-weight: bolder;
+ 
+}
+
+#rollButton{
+  font-weight: bolder;
+  border-radius: 25px;
+}
+
+
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "main.css": "/static/css/main.2e1507af.chunk.css",
+  "main.js": "/static/js/main.fb1996e0.chunk.js",
+  "main.js.map": "/static/js/main.fb1996e0.chunk.js.map",
+  "runtime~main.js": "/static/js/runtime~main.349b0c59.js",
+  "runtime~main.js.map": "/static/js/runtime~main.349b0c59.js.map",
+  "static/css/2.0ecd559f.chunk.css": "/static/css/2.0ecd559f.chunk.css",
+  "static/js/2.1efe5a7e.chunk.js": "/static/js/2.1efe5a7e.chunk.js",
+  "static/js/2.1efe5a7e.chunk.js.map": "/static/js/2.1efe5a7e.chunk.js.map",
+  "static/js/3.c6fbcc62.chunk.js": "/static/js/3.c6fbcc62.chunk.js",
+  "static/js/3.c6fbcc62.chunk.js.map": "/static/js/3.c6fbcc62.chunk.js.map",
+  "index.html": "/index.html",
+  "precache-manifest.9af7a80385829ec51a052b0ace6ce0c6.js": "/precache-manifest.9af7a80385829ec51a052b0ace6ce0c6.js",
+  "service-worker.js": "/service-worker.js",
+  "static/css/2.0ecd559f.chunk.css.map": "/static/css/2.0ecd559f.chunk.css.map",
+  "static/css/main.2e1507af.chunk.css.map": "/static/css/main.2e1507af.chunk.css.map",
+  "static/media/CLUB.png": "/static/media/CLUB.b9b419db.png",
+  "static/media/DIAMOND.png": "/static/media/DIAMOND.393d1d7b.png",
+  "static/media/HEART.png": "/static/media/HEART.4ede9234.png",
+  "static/media/KING.png": "/static/media/KING.0c926d91.png",
+  "static/media/QUEEN.png": "/static/media/QUEEN.5006f688.png",
+  "static/media/SPADE.png": "/static/media/SPADE.8fe8bc1f.png"
+}

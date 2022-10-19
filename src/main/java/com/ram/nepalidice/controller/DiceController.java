@@ -1,6 +1,5 @@
 package com.ram.nepalidice.controller;
 
-import com.ram.nepalidice.model.DiceEnum;
 import com.ram.nepalidice.model.Dice;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
