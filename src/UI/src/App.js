@@ -8,7 +8,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1 className='mainHeading'> Langur Burja</h1>
+      <h1 className='mainHeading'> Langur Burja (लंगुर बुर्जा)</h1>
       <DiceList />
       <pre/>
       <div className='copyRight'> &copy; 2022 - Ram Chapagai</div>

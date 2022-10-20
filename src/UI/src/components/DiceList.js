@@ -10,6 +10,7 @@ import { useEffect } from 'react'
 import axios from 'axios'
 import { useState } from 'react'
 
+import Pdf from '../assets/board.pdf';
 import Card from 'react-bootstrap/Card';
 
 function DiceList(){
@@ -20,6 +21,15 @@ function DiceList(){
     const data = await resp.json();
     setDiceData(data)
   }
+
+  const diceMap = {
+      "SPADE": "सुरथ",
+      "KING":"बुर्जा",
+      "QUEEN":"लंगुर",
+      "DIAMOND":"इट",
+    "CLUB":"चिडी",
+    "HEART":"पान"
+  };
 
 
   useEffect(() => {
@@ -40,15 +50,21 @@ function DiceList(){
          {
           diceData.map(dice => (
           
-            <Dice  key={dice.diceId} name={dice.face} image = {require(`../assets/${dice.face}.png`)} />
+            <Dice  key={dice.diceId} name={diceMap[dice.face]} image = {require(`../assets/${dice.face}.png`)} />
             
 
           ))
          }
           </div>
           <pre/>
-          <button onClick={rollAgain} id="rollButton" className="btn btn-success btn-lg col-lg-10">Roll Again</button>           
+          <button onClick={rollAgain} id="rollButton" className="btn btn-success btn-lg col-lg-10">Roll Again</button>
+
+          <pre/>
+        <div>
+            <a className="btn btn-success" href = {Pdf} target = "_blank">Download Board</a>
         </div>
+
+    </div>
   )
 }
 
