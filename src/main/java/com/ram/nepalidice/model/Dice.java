@@ -1,7 +1,18 @@
 package com.ram.nepalidice.model;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "dice")
 public class Dice {
+    @Id
+    @Column(name = "id")
     String diceId;
+
+    @Column(name = "dice_face")
     DiceEnum face;
 
     public String getDiceId() {
@@ -16,16 +27,16 @@ public class Dice {
         return face;
     }
 
+    public void setFace(DiceEnum face) {
+        this.face = face;
+    }
+
     @Override
     public String toString() {
         return "Dice{" +
                 "diceId=" + diceId +
                 ", face=" + face +
                 '}';
-    }
-
-    public void setFace(DiceEnum face) {
-        this.face = face;
     }
 
     private Dice(Builder builder) {
