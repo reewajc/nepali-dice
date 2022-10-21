@@ -45,6 +45,7 @@ public class DiceController {
         return new ResponseEntity<>(dices, HttpStatus.OK);
     }
     //TODO: For now Trying to post the number of players and their bid amount to a dice :)
+
     @PostMapping("/playTable")
     public ResponseEntity<?> bid(){
         List<Player> players = List.of();
