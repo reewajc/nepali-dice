@@ -12,14 +12,17 @@ import { useState } from 'react'
 
 import Pdf from '../assets/board.pdf';
 import Card from 'react-bootstrap/Card';
+import {Puff} from "react-loader-spinner";
 
 function DiceList(){
   const [diceData, setDiceData] = useState([]);
+  const [loading, setLoading] = useState(true);
   const baseURL = '/roll-dice';
   const rollDice = async () => {
     const resp = await fetch(baseURL)
     const data = await resp.json();
     setDiceData(data)
+    setLoading(false)
   }
 
   const diceMap = {
@@ -43,12 +46,35 @@ function DiceList(){
     )
   }
 
+  const changeColor = () => {
+      const btn = document.getElementById('rollButton');
+
+      btn.addEventListener('click', function onClick() {
+          btn.style.backgroundColor = 'salmon';
+          btn.style.color = 'white';
+      });
+  }
+
   //const {KING, QUEEN, CLUB, HEART, DIAMOND, SPADE} = diceData
   return (
     <div className='container'>
          <div className='row'> 
          {
-          diceData.map(dice => (
+          loading?
+
+              <Puff
+                  height="500"
+                  width=""
+                  radisu={1}
+                  color="#4fa94d"
+                  ariaLabel="puff-loading"
+                  wrapperStyle={{}}
+                  wrapperClass=""
+                  visible={true}
+              />
+
+
+              : diceData.map(dice => (
           
             <Dice  key={dice.diceId} name={diceMap[dice.face]} image = {require(`../assets/${dice.face}.png`)} />
             
@@ -57,11 +83,11 @@ function DiceList(){
          }
           </div>
           <pre/>
-          <button onClick={rollAgain} id="rollButton" className="btn btn-success btn-lg col-lg-10">Roll Again</button>
+          <button onClick={changeColor} id="rollButton" className="btn btn-success btn-lg col-lg-10">Roll Again</button>
 
           <pre/>
         <div>
-            <a className="btn btn-success" href = {Pdf} target = "_blank">Download Board</a>
+            <a  className="btn btn-success" href = {Pdf} target = "_blank">Download Board</a>
         </div>
 
     </div>

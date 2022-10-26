@@ -2,6 +2,8 @@ package com.ram.nepalidice.util;
 
 import com.ram.nepalidice.model.DiceEnum;
 
+import java.util.Random;
+
 public class DiceUtitlity {
 
     public static DiceEnum getDiceFace(int num) {
@@ -23,9 +25,8 @@ public class DiceUtitlity {
         }
 
     }
-
+    static Random randomGenerator = new Random();
     public static int generateRandom() {
-        int random = (int) (Math.random() * 5 + 1);
-        return random;
+       return randomGenerator.nextInt(6) + 1;
     }
 }
