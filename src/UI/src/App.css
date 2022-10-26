@@ -9,11 +9,6 @@
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
 .copyRight{
   color: white;
@@ -29,6 +24,7 @@
   margin: 5px;
   border-radius: 25px;
   background-color: #61dafb;
+
 }
 
 #cardImg{
@@ -40,7 +36,6 @@
 #cardText{
   font-weight: bolder;
   font-size: xxx-large;
- 
 }
 
 #rollButton{
@@ -72,4 +67,9 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+@keyframes colorChange {
+  from {color: red;}
+  to {color: green;}
 }

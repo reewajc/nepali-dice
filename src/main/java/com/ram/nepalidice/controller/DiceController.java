@@ -31,7 +31,9 @@ public class DiceController {
         Dice dice5 = new Dice.Builder().withDiceId("dice5").withFace(getDiceFace(generateRandom())).build();
         Dice dice6 = new Dice.Builder().withDiceId("dice6").withFace(getDiceFace(generateRandom())).build();
 
+
         List<Dice> dices = List.of(dice1, dice2, dice3, dice4, dice5, dice6);
+
 
         //Create a map with DiceEnum key and number of faces of Dice as value
         Map<String, List<Dice>> diceMap = dices
