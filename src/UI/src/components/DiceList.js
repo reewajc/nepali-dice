@@ -17,7 +17,9 @@ import {Puff} from "react-loader-spinner";
 function DiceList(){
   const [diceData, setDiceData] = useState([]);
   const [loading, setLoading] = useState(true);
-  const baseURL = '/roll-dice';
+    const [isActive, setIsActive] = useState(false);
+
+    const baseURL = '/roll-dice';
   const rollDice = async () => {
     const resp = await fetch(baseURL)
     const data = await resp.json();
@@ -44,16 +46,9 @@ function DiceList(){
     return(
       await rollDice()
     )
+      setIsActive(current => !current);
   }
 
-  const changeColor = () => {
-      const btn = document.getElementById('rollButton');
-
-      btn.addEventListener('click', function onClick() {
-          btn.style.backgroundColor = 'salmon';
-          btn.style.color = 'white';
-      });
-  }
 
   //const {KING, QUEEN, CLUB, HEART, DIAMOND, SPADE} = diceData
   return (
@@ -83,7 +78,14 @@ function DiceList(){
          }
           </div>
           <pre/>
-          <button onClick={changeColor} id="rollButton" className="btn btn-success btn-lg col-lg-10">Roll Again</button>
+          <button onClick={rollAgain} id="rollButton"
+
+                  style={{
+                      backgroundColor: isActive ? 'salmon' : '',
+                      color: isActive ? 'white' : '',
+                  }}
+
+                  className="btn btn-success btn-lg col-lg-10">Roll Again</button>
 
           <pre/>
         <div>

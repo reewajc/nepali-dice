@@ -1,24 +1,22 @@
 {
-  "main.css": "/static/css/main.6153a03a.chunk.css",
-  "main.js": "/static/js/main.5168fa88.chunk.js",
-  "main.js.map": "/static/js/main.5168fa88.chunk.js.map",
-  "static/js/1.8c8777f3.chunk.js": "/static/js/1.8c8777f3.chunk.js",
-  "static/js/1.8c8777f3.chunk.js.map": "/static/js/1.8c8777f3.chunk.js.map",
-  "static/css/2.4466818d.chunk.css": "/static/css/2.4466818d.chunk.css",
-  "static/js/2.02c01382.chunk.js": "/static/js/2.02c01382.chunk.js",
-  "static/js/2.02c01382.chunk.js.map": "/static/js/2.02c01382.chunk.js.map",
-  "runtime~main.js": "/static/js/runtime~main.469ce6c2.js",
-  "runtime~main.js.map": "/static/js/runtime~main.469ce6c2.js.map",
-  "static/media/CLUB.png": "/static/media/CLUB.b9b419db.png",
-  "static/media/KING.png": "/static/media/KING.0c926d91.png",
-  "static/media/QUEEN.png": "/static/media/QUEEN.5006f688.png",
-  "static/media/HEART.png": "/static/media/HEART.4ede9234.png",
-  "static/media/DIAMOND.png": "/static/media/DIAMOND.393d1d7b.png",
-  "static/media/SPADE.png": "/static/media/SPADE.8fe8bc1f.png",
-  "static/media/board.pdf": "/static/media/board.bc75515f.pdf",
-  "static/css/main.6153a03a.chunk.css.map": "/static/css/main.6153a03a.chunk.css.map",
-  "static/css/2.4466818d.chunk.css.map": "/static/css/2.4466818d.chunk.css.map",
-  "index.html": "/index.html",
-  "precache-manifest.a50c4d58ebbb799b55520e15a7bfa186.js": "/precache-manifest.a50c4d58ebbb799b55520e15a7bfa186.js",
-  "service-worker.js": "/service-worker.js"
+  "files": {
+    "main.css": "/static/css/main.51999e27.css",
+    "main.js": "/static/js/main.75e0273f.js",
+    "static/js/787.c4ce995d.chunk.js": "/static/js/787.c4ce995d.chunk.js",
+    "static/media/board.pdf": "/static/media/board.81ae14943b1a2ed69019.pdf",
+    "static/media/KING.png": "/static/media/KING.c232e01e8c11b693e2c6.png",
+    "static/media/QUEEN.png": "/static/media/QUEEN.f585ee90fb07f9ece75d.png",
+    "static/media/DIAMOND.png": "/static/media/DIAMOND.c80844208f14362a5066.png",
+    "static/media/HEART.png": "/static/media/HEART.f375f388b61fda129785.png",
+    "static/media/CLUB.png": "/static/media/CLUB.c94a9d8d3f3f084de5d0.png",
+    "static/media/SPADE.png": "/static/media/SPADE.4c63dfe5c2c5a5dffa46.png",
+    "index.html": "/index.html",
+    "main.51999e27.css.map": "/static/css/main.51999e27.css.map",
+    "main.75e0273f.js.map": "/static/js/main.75e0273f.js.map",
+    "787.c4ce995d.chunk.js.map": "/static/js/787.c4ce995d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.51999e27.css",
+    "static/js/main.75e0273f.js"
+  ]
 }
